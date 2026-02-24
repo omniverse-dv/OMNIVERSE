@@ -62,28 +62,26 @@ body{
 }
 
 /* ===== NAVBAR ===== */
-..navbar{
+.navbar{
   display:flex;
-  justify-content:space-evenly; /* ini bikin benar-benar rata */
+  justify-content:space-evenly;
   align-items:center;
   padding:15px 0;
-  background: transparent;
   }
 
 .nav-item{
   display:flex;
-  flex-direction:column;   /* ICON DI ATAS */
+  flex-direction:column; /* icon atas teks */
   align-items:center;
-  justify-content:center;
   font-size:13px;
   color:#2c3e70;
-  cursor:pointer;
+  text-align:center;
   }
   
   .nav-item span{
   font-size:22px;
+  margin-bottom:4px;
   line-height:1;
-  margin-bottom:4px; /* jarak icon ke teks */
   }
 
 .nav-item:hover{
@@ -145,11 +143,30 @@ body{
 
 <!-- NAVBAR -->
 <div class="navbar">
-  <div class="nav-item"><span>🏠</span>Home</div>
-  <div class="nav-item"><span>📚</span>Genre</div>
-  <div class="nav-item"><span>⬆️</span>Update</div>
-  <div class="nav-item"><span>🕒</span>Recently</div>
-  <div class="nav-item"><span>🔎</span>Search</div>
+  <div class="nav-item">
+    <span>🏠</span>
+    Home
+  </div>
+
+  <div class="nav-item">
+    <span>📚</span>
+    Genre
+  </div>
+
+  <div class="nav-item">
+    <span>⬆️</span>
+    Update
+  </div>
+
+  <div class="nav-item">
+    <span>🕒</span>
+    Recently
+  </div>
+
+  <div class="nav-item">
+    <span>🔍</span>
+    Search
+  </div>
 </div>
 
 <!-- NEW UPDATE -->
