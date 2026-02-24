@@ -1,40 +1,174 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>🌌OMNIVERSE</title>
+  <title>OMNIVERSE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Fantasy -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-      color: white;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #1a0129, #0b0015 60%);
+      color: #eee;
     }
 
     header {
-      padding: 25px 40px;
-      font-size: 44px;
-      font-weight: bold;
-      letter-spacing: 2px;
+      padding: 30px 50px;
+      font-family: 'Cinzel', serif;
+      font-size: 50px;
+      letter-spacing: 3px;
+      color: #c77dff;
+      text-shadow: 0 0 15px #7b2cbf;
     }
 
     .subtitle {
-      padding-left: 40px;
+      padding-left: 50px;
       font-size: 18px;
-      opacity: 0.8;
-      margin-top: -10px;
+      opacity: 0.7;
+      margin-top: -15px;
     }
 
     .container {
-      padding: 40px;
+      padding: 40px 50px;
     }
 
     h2 {
-      font-size: 28px;
-      margin-bottom: 25px;
+      font-family: 'Cinzel', serif;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #d0aaff;
     }
 
+    .novel-card {
+      display: flex;
+      gap: 20px;
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      transition: 0.3s;
+      align-items: center;
+      border: 1px solid rgba(199,125,255,0.2);
+    }
+
+    .novel-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(123,44,191,0.6);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .cover {
+      width: 110px;
+      height: 160px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(199,125,255,0.5);
+    }
+
+    .novel-content {
+      flex: 1;
+    }
+
+    .novel-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #7b2cbf;
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+
+    .novel-info {
+      font-size: 16px;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+
+    .read-btn {
+      display: inline-block;
+      padding: 8px 18px;
+      background: linear-gradient(45deg, #9d4edd, #7b2cbf);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .read-btn:hover {
+      box-shadow: 0 0 15px #9d4edd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      opacity: 0.5;
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .novel-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cover {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>OMNIVERSE</header>
+<div class="subtitle">Where worlds collide and legends are born.</div>
+
+<div class="container">
+  <h2>📖 Chronicles</h2>
+
+  <div class="novel-card">
+    <img src="cover1.jpg" class="cover">
+    <div class="novel-content">
+      <div class="badge">🔥 NEW</div>
+      <div class="novel-title">The Last Mage</div>
+      <div class="novel-info">Author: Admin | Genre: Fantasy | 12 Chapters</div>
+      <a href="novel1.html" class="read-btn">Enter Realm</a>
+    </div>
+  </div>
+
+  <div class="novel-card">
+    <img src="cover2.jpg" class="cover">
+    <div class="novel-content">
+      <div class="badge">⭐ HOT</div>
+      <div class="novel-title">Shadow Rebirth</div>
+      <div class="novel-info">Author: Admin | Genre: Dark Fantasy | 8 Chapters</div>
+      <a href="novel2.html" class="read-btn">Enter Realm</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 OMNIVERSE — Crafted in the Void.
+</footer>
+
+</body>
+</html>
     .novel-card {
       display: flex;
       gap: 20px;
