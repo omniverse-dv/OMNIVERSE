@@ -1,33 +1,146 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 <head>
   <title>OMNIVERSE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      color: white;
+    }
+
+    header {
+      padding: 25px 40px;
+      font-size: 44px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      padding-left: 40px;
+      font-size: 18px;
+      opacity: 0.8;
+      margin-top: -10px;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .novel-card {
+      display: flex;
+      gap: 20px;
+      background: rgba(255,255,255,0.08);
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      transition: 0.3s;
+      align-items: center;
+    }
+
+    .novel-card:hover {
+      background: rgba(255,255,255,0.15);
+      transform: scale(1.02);
+    }
+
+    .cover {
+      width: 100px;
+      height: 140px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .novel-content {
+      flex: 1;
+    }
+
+    .novel-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .novel-info {
+      font-size: 16px;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+
+    .read-btn {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #00c6ff;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .read-btn:hover {
+      background: #00a2d6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .novel-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cover {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
 
-<body style="background:linear-gradient(to bottom, black, purple); color:white; font-family:sans-serif; text-align:center; padding:40px;">
+<body>
 
-  <h1 style="font-size:40px;">🌌 OMNIVERSE</h1>
-  <p>Dunia cerita tanpa batas.</p>
+<header>OMNIVERSE</header>
+<div class="subtitle">Dunia cerita tanpa batas.</div>
 
-  <hr style="margin:30px; border:1px solid cyan;">
-
+<div class="container">
   <h2>📚 Daftar Novel</h2>
 
-  <div style="margin-top:20px;">
-
-    <p>
-      <a href="novel1.html" style="color:cyan; font-size:20px; text-decoration:none;">
-        The Last Mage
-      </a>
-    </p>
-
-    <p>
-      <a href="novel2.html" style="color:cyan; font-size:20px; text-decoration:none;">
-        Shadow Rebirth
-      </a>
-    </p>
-
+  <div class="novel-card">
+    <img src="cover1.jpg" class="cover">
+    <div class="novel-content">
+      <div class="novel-title">The Last Mage</div>
+      <div class="novel-info">Author: Admin | Genre: Fantasy | 12 Chapter</div>
+      <a href="novel1.html" class="read-btn">Baca</a>
+    </div>
   </div>
+
+  <div class="novel-card">
+    <img src="cover2.jpg" class="cover">
+    <div class="novel-content">
+      <div class="novel-title">Shadow Rebirth</div>
+      <div class="novel-info">Author: Admin | Genre: Dark Fantasy | 8 Chapter</div>
+      <a href="novel2.html" class="read-btn">Baca</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 OMNIVERSE. All rights reserved.
+</footer>
 <div id="disqus_thread"></div>
 <script>
     /**
