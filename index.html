@@ -130,8 +130,11 @@
         height: auto;
       }
     }
-    .novel-row {
-  display: flex;
+.novel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+    }
   gap: 20px;
   overflow-x: auto;
   padding-bottom: 10px;
@@ -190,7 +193,7 @@
   <div class="container">
   <h2>📖 Chronicles</h2>
 
-  <div class="novel-row">
+  <div class="novel-grid">
 
     <div class="novel-card">
       <img src="cover1.jpg" class="cover">
