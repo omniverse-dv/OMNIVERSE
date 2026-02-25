@@ -68,35 +68,24 @@
   opacity:1;
   visibility:visible;
 }
-  .sidebar{
+  .top-header{
   position:fixed;
   top:0;
-  left:-250px;
-  width:250px;
-  height:100%;
-  background:#0f2a4d;
-  transition:0.3s;
-  z-index:2000;
-}
-
-.sidebar.active{
   left:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:#dbeafe;
+  z-index:3000;
 }
 
-.overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.4);
-  opacity:0;
-  pointer-events:none;
-  transition:0.3s;
-  z-index:1500;
-}
-
-.overlay.active{
-  opacity:1;
-  pointer-events:auto;
+body{
+  margin:0;
+  padding-top:70px;
   }
+  
 /* ===== BODY ===== */
 body{
   margin:0;
@@ -222,7 +211,6 @@ body{
   <a href="#">Contact</a>
 </div>
 <div class="overlay"></div>
-<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
 <!-- HEADER -->
 <div class="top-header">
 <div class="menu-btn" onclick="openSidebar()">☰ OMNIVERSEREader</div>
