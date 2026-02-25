@@ -6,7 +6,19 @@
 <title>OMNIVERSE</title>
 
 <style>
-..sidebar{
+.top-header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:#dbeafe;
+  z-index:3000; /* harus di atas overlay */
+  }
+.sidebar{
   position:fixed;
   top:0;
   left:-280px;
@@ -79,12 +91,17 @@ body{
 
 /* ===== HEADER (STICKY) ===== */
 .top-header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:15px 20px;
   background:#dbeafe;
-}
+  z-index:3000; /* harus di atas overlay */
+  }
 
 .menu-btn{
   font-size:20px;
