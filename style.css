@@ -2,8 +2,8 @@ body {
   background: black;
 }
 body {
-  background: black;
-  color: #e2e8f0; /* warna teks utama soft white */
+  background: linear-gradient(to bottom, #0f172a, #020617);
+  color: #e2e8f0;
 }
 /* ===== DETAIL NOVEL LEBIH PADAT & BESAR ===== */
 
