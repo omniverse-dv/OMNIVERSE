@@ -97,46 +97,49 @@ p strong {
   color: #94a3b8 !important;
 }
 /* ===== CHAPTER STYLE UPGRADE ===== */
+/* ===== CHAPTER ULTRA READABLE ===== */
 
 .chapter-container {
-  max-width: 800px;
-  margin: 100px auto;
-  padding: 0 25px;
+  max-width: 850px;
+  margin: 120px auto;
+  padding: 0 30px;
   font-family: Georgia, "Times New Roman", serif;
 }
 
-/* Judul */
+/* Judul makin besar */
 .chapter-container h1 {
-  font-size: 46px;
-  margin-bottom: 40px;
+  font-size: 52px;
+  margin-bottom: 50px;
   line-height: 1.3;
 }
 
-/* Isi cerita */
+/* Isi cerita SUPER nyaman */
 .chapter-container p {
-  font-size: 22px;        /* dibesarin */
-  line-height: 2.2;       /* lebih lega */
-  margin-bottom: 30px;
+  font-size: 24px;      /* makin gede */
+  line-height: 2.4;     /* super lega */
+  margin-bottom: 36px;
   text-align: justify;
 }
 
-/* Link kembali */
+/* Drop cap gede banget */
+.chapter-container p::first-letter {
+  font-size: 64px;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  padding-right: 10px;
+}
+
+/* Link kembali lebih tegas */
 .chapter-container a {
   display: inline-block;
-  margin-top: 60px;
-  font-size: 20px;        /* dibesarin */
+  margin-top: 70px;
+  font-size: 22px;      /* dibesarin lagi */
+  font-weight: 700;
   color: #38bdf8;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .chapter-container a:hover {
   opacity: 0.7;
-}
-.chapter-container p::first-letter {
-  font-size: 48px;
-  font-weight: bold;
-  float: left;
-  line-height: 1;
-  padding-right: 8px;
-}
+  }
