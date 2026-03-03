@@ -237,7 +237,23 @@ body{
     </div>
   </div>
 </div>
+<div class="novel-grid">
 
+  <div class="novel-card" data-status="ongoing">
+    <a href="novel1.html">
+      <img src="cover1.jpg" class="cover">
+      <div class="novel-title">Akhir</div>
+      <div class="novel-info">Romance • 12 Ch</div>
+    </a>
+  </div>
+
+  <div class="novel-card" data-status="complete">
+    <img src="cover2.jpg" class="cover">
+    <div class="novel-title">Shadow Rebirth</div>
+    <div class="novel-info">Dark Fantasy • 30 Ch</div>
+  </div>
+
+</div>
 <!-- ALL STORY -->
 <div class="section">
   <h3>All Story</h3>
@@ -249,7 +265,15 @@ body{
     </div>
   </div>
 </div>
+<div class="section">
+  <h3>Ongoing</h3>
+  <div class="novel-grid" id="ongoing-list"></div>
+</div>
 
+<div class="section">
+  <h3>Complete</h3>
+  <div class="novel-grid" id="complete-list"></div>
+  </div>
 <script>
 const menuBtn = document.querySelector(".menu-btn");
 const sidebar = document.querySelector(".sidebar");
@@ -265,6 +289,20 @@ overlay.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 </script>
+<script>
+const novels = document.querySelectorAll(".novel-card");
+const ongoingList = document.getElementById("ongoing-list");
+const completeList = document.getElementById("complete-list");
 
+novels.forEach(novel => {
+  const status = novel.getAttribute("data-status");
+
+  if (status === "ongoing") {
+    ongoingList.appendChild(novel);
+  } else if (status === "complete") {
+    completeList.appendChild(novel);
+  }
+});
+</script>
 </body>
   </html>
